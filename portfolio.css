@@ -43,13 +43,19 @@ h3 {
     font-size: 1.25rem;
 }
 
-img, video, iframe {
+img, iframe {
     max-width: 100%;
     border-radius: var(--border-radius);
     /* Maybe come back later and fix */
 }
 
-img, video {
+iframe {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+
+img {
     height: auto;
 }
 
