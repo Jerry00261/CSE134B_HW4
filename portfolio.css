@@ -116,9 +116,9 @@ a:hover {
     background-color: var(--button-color);
 }
 
-button:focus, input:focus, textarea:focus {
+button:focus {
     outline: 3px solid var(--h-color);
-}
+} 
 
 main, footer {
     max-width: var(--width);
@@ -126,8 +126,7 @@ main, footer {
     padding: var(--space);
     background-color: var(--border-image);
     border-radius: var(--border-radius);
-    border-style: solid;
-    border-color: var(--main);
+    border: 3px solid var(--main);
 }
 
 /* Adjacent sibling combinator adds a divider line between sections */
@@ -135,9 +134,11 @@ section + section {
     border-top: 4px solid var(--border);
 }
 
-main > career-title .career-title {
+.career-title {
     text-align: center;
     font-style: italic;
+    font-size: x-large;
+    margin: 0.5em var(--margin-none) 0.5em;
 }
 
 /* Child combinator centers and borders only images placed directly inside main */
@@ -203,8 +204,6 @@ dialog h3 {
 
 button {
     font-weight: bold;
-    justify-content: center;
-    align-items: center;
     margin-top: 2em;
     padding: 0.5em 1em;
     background-color: var(--main);
@@ -218,11 +217,13 @@ button:hover {
 
 input, textarea {
     box-sizing: border-box;
-    display: block;
+    display: block; 
     width: 100%;
     max-width: 350px;
-    padding: 0.3em;
+    padding: 0.3em; 
     font-size: 1rem;
+    border: 3px solid var(--main);
+    border-radius: var(--border-radius);
 }
 
 fieldset {
@@ -245,6 +246,37 @@ address {
 address p {
     margin: var(--margin-none);
 }
+
+/* ------------- Assignment 4 ----------------- */
+
+input:required, textarea:required{
+    border-color: var(--main);
+    margin-left: 0.7em;
+}
+
+label {
+    margin-left: 0.7em;
+}
+
+input:user-valid, textarea:user-valid {
+    border: 3px solid green;
+}
+
+input:user-invalid, textarea:user-invalid {
+    border: 3px solid red;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--h-color);
+    outline: none;
+}
+
+body > form button {
+    margin-left: 0.7em;
+    margin-top: 0;
+}
+
+/* ---------------------------------------------- */
 
 
 @media (max-width: 600px) {
