@@ -13,7 +13,6 @@
     --button-color: #22208a;
     --border-radius: 8px;
 
-    --button-color: #0d1726;
     --button-text: #0d1726;          
     --button-hover: #9bc4ea;         
     --input-bg: #0d1726;             
@@ -317,12 +316,12 @@ body > form button {
 }
 
 #comments-info.near-limit {
-    color: var(--error);
+    color: var(--h-color);
     font-weight: bold;
 }
 
 #comments-info.at-limit {
-    color: #ff8080;
+    color: var(--error);
     font-weight: bold;
 }
 

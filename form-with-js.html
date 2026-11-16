@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form with JS </title>
     <link rel="stylesheet" href="portfolio.css">
+    <script src="theme.js"></script>
     <script src="form.js" defer></script>
 </head>
 <body>
@@ -36,7 +37,13 @@
                     <a href="Current-Resume.html">Resume</a>
                 </li>
                 <li>
+                    <a href="form-no-js.html">Form</a>
+                </li>
+                <li>
                     <a href="form-with-js.html" aria-current="page">JS Form</a>
+                </li>
+                <li id="theme-control" hidden>
+                    <button type="button" id="theme-toggle">Switch to light theme</button>
                 </li>
             </ul>
         </nav>   
@@ -83,8 +90,6 @@
             <output id="comments-info" for="comments" hidden></output>
             <input type="hidden" name="form-errors" id="form-errors">
 
-
-
             <input type="hidden" value="true" name="possible_bot">
             
             <button type="submit">Submit</button>
@@ -96,7 +101,6 @@
 </body>
 </html>
 
-<!-- CHANGE ALL FOOTER FORMS APPROPIATELT, E.G. LABEL AND INPUT TAGS PLACEMENT SAME AS THIS FILES ONE (NOT NESTED)-->
 
 
 
