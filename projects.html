@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Official Resume - Jerry Barillas</title>
-
+    <title>Projects - Jerry Barillas Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
     <script src="theme.js"></script>
 </head>
-<body>
 
-     <header>
+<body>
+    <header>
         <nav>
             <ul>
                 <li>
@@ -26,16 +25,16 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Experience.html">Experience</a>
+                    <a href="experience.html">Experience</a>
                 </li>
                 <li>
-                    <a href="Projects.html">Projects</a>
+                    <a href="projects.html" aria-current="page">Projects</a>
                 </li>
                 <li>
-                    <a href="Hackathons.html">Hackathons</a>
+                    <a href="hackathons.html">Hackathons</a>
                 </li>
                 <li>
-                    <a href="Current-Resume.html" aria-current="page">Resume</a>
+                    <a href="current-resume.html">Resume</a>
                 </li>
                 <li>
                     <a href="form-no-js.html">Form</a>
@@ -51,17 +50,36 @@
     </header>
 
     <main>
-        <h1>My current resume as of 10/12/2026</h1>
+        <h1>My Personal/Group Projects</h1>
 
-        <iframe src="sources/Official_Resume.pdf" title="Jerry Barillas Official Resume" 
-                width="600" height="800">
-        </iframe>
+        <section>
+            <h2>Triton Lost and Found</h2>
+            <p>Java, Spring Boot, Flyway, PostgreSQL, Docker</p>
+            <p>July 2026 - Present</p>
+            <p>
+                Triton Lost and Found is a web application designed to help UC San Diego 
+                students report lost and found items and submit claims to recover appropriate belongings.
+                Built with Java, Spring Boot, and PostgreSQL, the project uses Spring Data JPA
+                for database operations, Flyway for database migrations, and DTOs to validate 
+                incoming requests and maintain clean REST API design. I am also using Docker Compose 
+                to containerize the application's environment and database. 
+            </p>
+        </section>
 
-        <p>
-            Jerry Barillas<br>
-            University of California, San Diego<br>
-            La Jolla, CA
-        </p>
+        <section>
+            <h2>UCSDelivery</h2>
+            <p>TypeScript, Express, MariaDB, Docker</p>
+            <p>November 2025 - January 2026</p>
+            <p>
+                UCSDelivery is a campus delivery app for UCSD students where they can order
+                things from their local on campus market. A discord bot then posts each order 
+                to. deliverer's channel. When a deliverer accepts an order, the bot opens a 
+                private channel with the order details. The deliverer uploads a photo as proof
+                of delivery, and the order is then marked complete. The frontend is built with React,
+                and then the backend was built with Node.js/Express server with a MariaDB database
+                which stores useres, items, and orders. The web app is also containerize with docker compose.
+            </p>
+        </section>
 
     </main>
 
@@ -94,7 +112,7 @@
                     <input type="text" name="lastName" id="lastName">
                 </p>
                 <p>
-                    <label for="email">Email:</label>
+                    <label for="email">Email:</label> 
                     <input type="email" name="email" id="email">
                 </p>
 
@@ -102,11 +120,9 @@
                     <label for="message">Purpose for contact:</label>
                     <textarea id="message" name="message"></textarea>
                 </p>
-
                 <button type="submit">Send</button>
             </fieldset>
         </form>
     </footer>
-    
 </body>
 </html>

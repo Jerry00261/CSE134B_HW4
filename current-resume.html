@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Jerry Barillas Portfolio</title>
+    <title>Official Resume - Jerry Barillas</title>
+
     <link rel="stylesheet" href="portfolio.css">
     <script src="theme.js"></script>
 </head>
-
 <body>
-   <header>
+
+     <header>
         <nav>
             <ul>
                 <li>
@@ -25,16 +26,16 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Experience.html" aria-current="page">Experience</a>
+                    <a href="experience.html">Experience</a>
                 </li>
                 <li>
-                    <a href="Projects.html">Projects</a>
+                    <a href="projects.html">Projects</a>
                 </li>
                 <li>
-                    <a href="Hackathons.html">Hackathons</a>
+                    <a href="hackathons.html">Hackathons</a>
                 </li>
                 <li>
-                    <a href="Current-Resume.html">Resume</a>
+                    <a href="current-resume.html" aria-current="page">Resume</a>
                 </li>
                 <li>
                     <a href="form-no-js.html">Form</a>
@@ -48,44 +49,20 @@
             </ul>
         </nav>        
     </header>
+
     <main>
-        <h1>My Software Engineering Experience So Far</h1>
+        <h1>My current resume as of 10/12/2026</h1>
 
-        <section>
+        <iframe src="sources/official_resume.pdf" title="Jerry Barillas Official Resume" 
+                width="600" height="800">
+        </iframe>
 
-            <h2>San Diego Supercomputer Center - Funnel Job Tracker</h2>
-            <career-title>
-                <p class="career-title">Software Engineer Intern</p> 
-            </career-title>
-            <p>June 2026 - August 2026</p>
+        <p>
+            Jerry Barillas<br>
+            University of California, San Diego<br>
+            La Jolla, CA
+        </p>
 
-
-            <p>
-                During my internship at the San Diego Supercomputer Center,
-                I worked in an <i>Agile</i> environment to help develop web application 
-                features across multiple sprints. I used React and Next.js to build 
-                features for account creation, resume tailoring, application tracking, 
-                and many other unique features while also turning Figma designs into 
-                responsive UI components. I also used Docker to help prepare the application 
-                for cloud deployment.
-            </p>
-        </section>
-
-        <section>
-            <h2>Google x Code2Career (BASTA)</h2>
-            <career-title>
-                <p class="career-title">Software Engineering Fellow</p>
-            </career-title>
-            <p>September 2026 - Present</p>
-            <p>
-                As a Software Engineering Fellow in Google x Code2Career (BASTA),
-                I have been strengthening my technical interview preparation through
-                mentorship, career workshops, and consistent interview practice.
-                The program has helped me improve my understanding of data structures,
-                algorithms, and problem solving while preparing me for software
-                engineering opportunities.
-            </p>
-        </section>
     </main>
 
     <footer>
@@ -125,6 +102,7 @@
                     <label for="message">Purpose for contact:</label>
                     <textarea id="message" name="message"></textarea>
                 </p>
+
                 <button type="submit">Send</button>
             </fieldset>
         </form>
