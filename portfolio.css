@@ -12,6 +12,32 @@
     --margin-none: 0em;
     --button-color: #22208a;
     --border-radius: 8px;
+
+    --button-color: #0d1726;
+    --button-text: #0d1726;          
+    --button-hover: #9bc4ea;         
+    --input-bg: #0d1726;             
+    --input-text: #f4f6f9;           
+    --valid: #3ecf6e;                
+    --invalid: #ff6b6b;              
+    --error: #ff8080;                
+}
+
+:root[data-theme="light"] {
+    --background: #eef2f7;
+    --border-image: #ffffff;
+    --border: #b8c4d6;
+    --text: #1a1a1a;
+    --main: #0b5cad;
+    --h-color: #b35c00;
+    --button-color: #d6e6ff;
+    --button-text: #ffffff;
+    --button-hover: #084a8c;
+    --input-bg: #ffffff;
+    --input-text: #1a1a1a;
+    --valid: #1e7b34;
+    --invalid: #b00020;
+    --error: #b00020;
 }
 
 body {
@@ -209,10 +235,12 @@ button {
     background-color: var(--main);
     border: 1px solid var(--border);
     border-radius: var(--border-radius);
+
+    color: var(--button-text);
 }
 
 button:hover {
-    background-color: #9bc4ea;
+    background-color: var(--button-hover);
 }
 
 input, textarea {
@@ -224,6 +252,9 @@ input, textarea {
     font-size: 1rem;
     border: 3px solid var(--main);
     border-radius: var(--border-radius);
+
+    color: var(--input-text);
+    background-color: var(--input-bg);
 }
 
 fieldset {
@@ -259,11 +290,11 @@ label {
 }
 
 input:user-valid, textarea:user-valid {
-    border: 3px solid green;
+    border: 3px solid var(--valid);
 }
 
 input:user-invalid, textarea:user-invalid {
-    border: 3px solid red;
+    border: 3px solid var(--invalid);
 }
 
 input:focus, textarea:focus {
@@ -286,7 +317,7 @@ body > form button {
 }
 
 #comments-info.near-limit {
-    color: var(--h-color);
+    color: var(--error);
     font-weight: bold;
 }
 
@@ -305,7 +336,14 @@ body > form button {
 }
 
 #error-area li {
-    color: #ff8080;
+    color: var(--error);
+}
+
+#theme-toggle {
+    margin-top: 0;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: 0.65em 1em;
 }
 
 /* ---------------------------------------------- */
