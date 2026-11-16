@@ -354,7 +354,7 @@ body > form button {
     }
 
     ::view-transition-old(root), ::view-transition-new(root) {
-        animation-duration: 0.8s;
+        animation-duration: 0.6s;
     }
 }
 
