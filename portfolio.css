@@ -276,6 +276,38 @@ body > form button {
     margin-top: 0;
 }
 
+#comments-info {
+    display: block;
+    margin: 0.5em 0 1em 0.7em;
+}
+
+#comments-info[hidden] {
+    display: none;
+}
+
+#comments-info.near-limit {
+    color: var(--h-color);
+    font-weight: bold;
+}
+
+#comments-info.at-limit {
+    color: #ff8080;
+    font-weight: bold;
+}
+
+#error-title {
+    font-size: 1.25rem;
+    margin: 1em 0 0.25em 0.7em;
+}
+
+#error-area ul {
+    margin: 0 0 1em 0.7em;
+}
+
+#error-area li {
+    color: #ff8080;
+}
+
 /* ---------------------------------------------- */
 
 
